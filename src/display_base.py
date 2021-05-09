@@ -18,12 +18,12 @@ class _DisplayBase(ABC):
         return "TYPE: '{}' - RES: w{}x h{} x {}bit".format(self._type, self._resX, self._resY, self._colors)
 
     @property
-    def colors(self):
-        return self._colors
-
-    @property
     def type(self):
         return self._type
+
+    @property
+    def colors(self):
+        return self._colors
 
     @property
     def resolution(self):
